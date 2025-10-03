@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 
 class ZooManagement {
     public static void main(String[] args) {
@@ -18,3 +18,4 @@ class ZooManagement {
         System.out.println("Number of the cages: " + nbrCages);
     }
 }
+*/
