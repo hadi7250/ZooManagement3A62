@@ -3,4 +3,9 @@ public class Penguin extends Aquatic{
 
     public Penguin(){
     }
+
+    public Penguin(float swimmingSpeed, String habitat){
+        super(habitat);
+        this.swimmingDepth = swimmingSpeed;
+    }
 }

@@ -3,4 +3,9 @@ public class Terrestrial extends Animal{
 
     public Terrestrial() {
     }
+
+    public Terrestrial(int nbrLegs)
+    {
+        this.nbrLegs = nbrLegs;
+    }
 }

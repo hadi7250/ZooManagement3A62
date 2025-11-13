@@ -1,6 +1,9 @@
 public class Aquatic extends Animal{
-    private String habitat;
+    protected String habitat;
 
-    public Aquatic(){
+    public Aquatic(){}
+
+    public Aquatic(String habitat){
+        this.habitat = habitat;
     }
 }

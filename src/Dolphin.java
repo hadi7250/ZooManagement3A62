@@ -3,4 +3,9 @@ public class Dolphin extends Aquatic{
 
     public Dolphin(){
     }
+
+    public Dolphin(float swimmingSpeed, String habitat){
+        super(habitat);
+        this.swimmingSpeed = swimmingSpeed;
+    }
 }
