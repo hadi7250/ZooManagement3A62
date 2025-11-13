@@ -4,22 +4,22 @@ public class Terrestrial implements Omnivore<Food>{
         this.name=name;
     }
     @Override
-    public void eatMeat(Food meat) {
-        if (meat == Food.MEAT || meat == Food.PLANT) {
-            System.out.println(name + " eats meat out of water");
+    public void eatMeat(Food food) {
+        if (food == Food.MEAT || food == Food.PLANT) {
+            System.out.println(name + " eats " + food + " out of water");
         }
         else {
-            System.out.println(name + " doesn't eat " + meat);
+            System.out.println(name + " doesn't eat " + food);
         }
     }
 
     @Override
-    public void eatPlant(Food plant) {
-        if (plant == Food.PLANT || plant == Food.BOTH) {
-            System.out.println(name + " eats plants out of water");
+    public void eatPlant(Food food) {
+        if (food == Food.PLANT || food == Food.BOTH) {
+            System.out.println(name + " eats " + food + " out of water");
         }
         else {
-            System.out.println(name + " doesn't eat " + plant);
+            System.out.println(name + " doesn't eat " + food);
         }
     }
 

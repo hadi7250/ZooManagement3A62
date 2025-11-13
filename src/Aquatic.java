@@ -5,15 +5,15 @@ public class Aquatic implements Carnivore <Food>{
     }
 
     @Override
-    public void eatMeat(Food meat)
+    public void eatMeat(Food food)
     {
-        if (meat == Food.MEAT)
+        if (food == Food.MEAT)
         {
             System.out.println(name + " eats meat in water");
         }
         else
         {
-            System.out.println(name + " won't eat" + meat);
+            System.out.println(name + " won't eat " + food);
         }
     }
 }
