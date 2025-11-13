@@ -26,7 +26,7 @@ public class Terrestrial implements Omnivore<Food>{
     @Override
     public void eatPlantAndMeat(Food food) {
         if (food == Food.BOTH) {
-            System.out.println(name + " eats both meat and plants out of water");
+            System.out.println(name + " eats " + food +" fruits and meat in da forest");
         }
         else  {
             System.out.println(name + " is stupid and doesn't like " + food);
