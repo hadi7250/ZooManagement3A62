@@ -1,32 +1,23 @@
 public class Main {
     public static void main(String[] args) {
-        SocieteArrayList societe = new SocieteArrayList();
 
-        Employe e1 = new Employe(51235, "Ahmed", "Mohamed", "HR", 3);
-        Employe e2 = new Employe(23156, "Abdullah", "Sami", "Finance", 2);
-        Employe e3 = new Employe(32114, "Hedi", "Ammar", "Maintenance", 4);
+        DepartementHashSet societe = new DepartementHashSet();
 
-        societe.ajouterEmploye(e1);
-        societe.ajouterEmploye(e2);
-        societe.ajouterEmploye(e3);
+        Department d1 = new Department(1, 300000, "Esprit");
+        Department d2 = new Department(2, 300000, "Lbattala");
+        Department d3 = new Department(3, 3, "Lkhadema");
 
-        System.out.println("List of employees: ");
-        societe.displayEmploye();
+        societe.ajouterDepartement(d1);
+        societe.ajouterDepartement(d2);
+        societe.ajouterDepartement(d3);
 
-        System.out.println("\n search by name (Hedi): " + societe.rechercherEmploye("Hedi"));
-        System.out.println("\n search by name (khouna): " + societe.rechercherEmploye("khouna"));
+        System.out.println("\nListe des départements :");
+        societe.displayDepartement();
 
-
-        System.out.println("\n Suppression of e2:");
-        societe.supprimerEmploye(e2);
-        societe.displayEmploye();
-
-        System.out.println("\n sorting by id: ");
-        societe.trierEmployeParId();
-        societe.displayEmploye();
-
-        System.out.println("\n sorting by name, department and grade: ");
-        societe.trierEmployeParNomDepartementEtGrade();
-        societe.displayEmploye();
+        System.out.println("\nRecherche 'Lkhadema' : " + societe.rechercherDepartement("Lkhadema"));
+        societe.supprimerDepartement(d1);
+        System.out.println("\nTri par ID et la detruire d'esprit:");
+        System.out.println(societe.trierDepartementById());
+        System.out.println("\nRecherche 'Esprit' : " + societe.rechercherDepartement(d1));
     }
 }
