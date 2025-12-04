@@ -16,9 +16,7 @@ public class StudentManagement implements Management {
 
     @Override
     public String returnStudentsNames(List<Student> students, Function<Student, String> fun) {
-        return students.stream()
-                .map(fun)
-                .collect(Collectors.joining(", "));
+        return students.stream().map(fun).collect(Collectors.joining(", "));
     }
 
     @Override
@@ -28,9 +26,7 @@ public class StudentManagement implements Management {
 
     @Override
     public List<Student> sortStudentsById(List<Student> students, Comparator<Student> com) {
-        return students.stream()
-                .sorted(com)
-                .toList();
+        return students.stream().sorted(com).toList();
     }
 
     @Override
