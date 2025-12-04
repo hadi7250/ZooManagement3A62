@@ -1,9 +1,9 @@
-public class Etudiant {
+public class Student {
     private int id, age;
     private String nom;
 
-    public Etudiant(){}
-    public Etudiant(int id, int age, String nom) {}
+    public Student(){}
+    public Student(int id, int age, String nom) {}
 
     public int getId() {
         return id;
